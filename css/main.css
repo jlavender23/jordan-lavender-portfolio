@@ -446,9 +446,9 @@ button:hover {
 }
 
 .icon {
-  padding: 0;
-  width: 125px;
-  color: #344a5f;
+  padding: 0 50px;
+  width: 65px;
+  color: red;
 }
 
 /*------------------- About Section -------------------- */
@@ -868,16 +868,13 @@ footer .content-wrapper {
     float: right;
     text-align: right;
     margin-right: 25px;
-    transition: none;
   }
 
 
   .nav-list li {
     display: inline-block;
     opacity: 1;
-
     margin: 0 20px;
-    transition: none;
   }
 
   .nav-list li a {
