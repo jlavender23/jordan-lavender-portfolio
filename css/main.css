@@ -160,27 +160,49 @@ footer {
 
 
 header {
-  background: #B4C7D9
+  background: #B4C7D9;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper {
   display:flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   background: #B4C7D9;
   padding: 0;
+  margin: 0;
   width: 100%;
+}
+
+.header-divider {
+  width: 75%;
+  height: 1px;
+  border-top: 1px solid #fff;
+  margin: 10px 0 20px 0;
+  font-weight: bold
 }
 
 nav {
   display: flex;
   background: #B4C7D9;
-  top: 0;
-  width: 100%;
-  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+  justify-content: space-around;
   padding: 0;
   text-transform: uppercase;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-weight: bold;
+  padding: 0px;
 }
 
 
@@ -189,7 +211,7 @@ nav {
   display: inline;
   justify-content: space-between;
   flex-flow: row wrap;
-  padding: 20px;
+  padding: 5px;
 }
 
 
@@ -790,12 +812,38 @@ footer .content-wrapper {
   /* Tablet Styles here */
 
 
+  header {
+    justify-content: space-around;
+}
+
+header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+
+header nav {
+  width: 45%;
+  margin: 0 20px;
+}
+
+header nav ul {
+    justify-content: space-between;
+}
+
+.header-divider {
+    display: none;
+}
+
   .hero-area h1 {
     padding-left: 40px;
   }
 
   .hero-area p {
     padding-left: 40px;
+  }
+
+  .nav-list li {
+    float: right;
   }
 
   .portfolio h2 {
@@ -851,7 +899,29 @@ footer .content-wrapper {
 }
 
 @media only screen and (min-width: 1200px) {   /*Desktop Styles Here*/
+
   
+ 
+  header {
+    justify-content: space-around;
+}
+
+header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav ul {
+    justify-content: space-between;
+}
+
+.header-divider {
+    display: none;
+}
 
   .logo {
     width: 50%;
@@ -875,6 +945,7 @@ footer .content-wrapper {
     display: inline-block;
     opacity: 1;
     margin: 0 20px;
+    
   }
 
   .nav-list li a {
