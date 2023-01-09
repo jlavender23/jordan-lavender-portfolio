@@ -872,7 +872,7 @@ header nav ul {
     padding: 0 50px;
   }
 
-  .project-btn button {
+  .project-btn a {
     width: 45%;
   }
 
@@ -915,7 +915,7 @@ header nav ul {
 
   
  
-  header {
+header {
     justify-content: space-around;
 }
 
@@ -962,7 +962,7 @@ header nav ul {
   }
 
   .nav-list li a {
-    color: #152a3e;;
+    color: #152a3e;
   }
 
   .nav-list li a.active,
@@ -978,9 +978,10 @@ header nav ul {
     font-size: 4em;
   }
 
+  
   .notes {
     display: flex;
-    flex-flow: row;
+    flex-flow: row ;
   }
 
   .guess {
@@ -998,15 +999,8 @@ header nav ul {
     flex-flow: row-reverse;
   }
 
-
   .project-body h3 {
     margin-top: 0;
-  }
-
-
-  .tech-description p {
-    padding: 0 70px;
-    word-spacing: 0.3em;
   }
 
   .skills .content-wrapper {
